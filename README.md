@@ -97,7 +97,9 @@ hapusPengadaan()
 updatePengadaan()
 
 3. Barang
-<img width="443" height="158" alt="image" src="https://github.com/user-attachments/assets/fb0bb4a9-10a6-4597-991a-e936780da070" />
+<img width="443" height="158" alt="image" src="https://github.com/user-attachments/assets/dd2ef58b-9e62-48f7-91a3-ad19838309d8" />
+
+
 
 Keterangan atribut:
 
