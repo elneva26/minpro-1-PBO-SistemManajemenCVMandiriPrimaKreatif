@@ -63,6 +63,7 @@ Untuk data Barang terdapat:
 - tampilkanBarang
 - hapusBarang
 - updateStok
+- 
 Untuk data Pemasok terdapat:
 
 - menuPemasok
@@ -103,6 +104,7 @@ Class ini juga memiliki getter dan setter untuk mengakses serta mengubah nilai a
 Class Pemasok merupakan class entitas yang digunakan untuk menyimpan data pemasok.
 
 Class ini memiliki empat atribut, yaitu:
+
 - idPemasok digunakan sebagai identitas pemasok.
 - nama digunakan untuk menyimpan nama pemasok.
 - alamat digunakan untuk menyimpan alamat pemasok.
@@ -119,7 +121,9 @@ Class ini juga memiliki getter dan setter untuk setiap atribut, lalu validasi di
    <img width="460" height="132" alt="image" src="https://github.com/user-attachments/assets/6a533707-e985-406f-b640-cd0e4120853a" />
 
 Class Pengadaan merupakan class entitas yang digunakan untuk menyimpan data pengadaan.
+
 Class ini memiliki tiga atribut, yaitu:
+
 -  idPengadaan digunakan sebagai identitas pengadaan.
 -  tanggal digunakan untuk menyimpan tanggal pengadaan.
 - alamat digunakan untuk menyimpan alamat pengadaan.
@@ -132,7 +136,8 @@ Pada constructor tersebut, setTanggal digunakan agar validasi tanggal dilakukan 
 
 
 ## Fitur CRUD
-1. Create 
+1. Create
+   
 Create merupakan proses untuk menambahkan data baru ke dalam program, lalu pada data Barang, user diminta memasukkan ID barang, nama barang, dan stok barang, setelah itu data yang dimasukkan kemudian digunakan untuk membuat object Barang.
 
 
@@ -140,6 +145,7 @@ Object yang telah dibuat kemudian dimasukkan ke dalam ArrayList<Barang> mengguna
 
 
 2. Read
+   
 Read merupakan proses untuk menampilkan data yang telah tersimpan dan data yang terdapat dalam ArrayList ditampilkan menggunakan perulangan.
 Contohnya pada data Barang:
 
@@ -147,6 +153,7 @@ Contohnya pada data Barang:
 Perulangan tersebut digunakan untuk mengambil setiap object barang yang terdapat dalam arrayList, lalu aata yang telah diambil kemudian ditampilkan kepada user, serta proses yang sama digunakan untuk menampilkan data Pemasok dan Pengadaan.
 
 3. Update
+   
 Update merupakan proses untuk mengubah data yang telah tersimpan dan pada data barang, proses update digunakan untuk memperbarui stok barang berdasarkan ID barang. Selain itu, di beberapa class data lainnya proses update digunakan seperti berikut ini;
 -	pada data Pemasok, proses update digunakan untuk memperbarui data pemasok berdasarkan ID pemasok.
 
@@ -156,6 +163,7 @@ Update merupakan proses untuk mengubah data yang telah tersimpan dan pada data b
 
 
 4. Delete
+   
 Delete merupakan proses untuk menghapus data yang telah tersimpan, selain itu user memasukkan ID data yang ingin dihapus, lalu program akan mencari data berdasarkan ID tersebut.Jika data ditemukan, data akan dihapus dari ArrayList.
 Proses delete diterapkan pada:
 -  Data Barang
@@ -164,6 +172,7 @@ Proses delete diterapkan pada:
 
 ##Alur Program
 1. Menjalankan Program
+
 Pada saat program dijalankan melalui class SistemmanajemenCVMPK, program membuat object scanner untuk menerima input dari user dan object service untuk menangani proses pengelolaan data.
 
 <img width="668" height="116" alt="image" src="https://github.com/user-attachments/assets/94064e6f-ec30-4b9d-8825-d22b84afa352" />
@@ -171,6 +180,7 @@ Pada saat program dijalankan melalui class SistemmanajemenCVMPK, program membuat
 Setelah itu, program masuk ke perulangan menu utama.
 
 2. Menampilkan Menu Utama
+   
    Program menampilkan menu utama;
 
    <img width="774" height="266" alt="image" src="https://github.com/user-attachments/assets/cdbd6f08-35de-4f48-9b55-b0bfd6ac6b8a" />
