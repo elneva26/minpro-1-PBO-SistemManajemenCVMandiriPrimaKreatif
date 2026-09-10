@@ -1,0 +1,5 @@
+com\mycompany\sistemmanajemencvmpk\SistemmanajemenCVMPK.class
+model\Pemasok.class
+model\Service.class
+model\Barang.class
+model\Pengadaan.class
