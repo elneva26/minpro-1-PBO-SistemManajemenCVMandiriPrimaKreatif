@@ -35,7 +35,6 @@ Tujuan dari program ini yaitu:
 11. Menerapkan validasi input pada data tertentu.
 
 ---
-
 # Class yang Digunakan
 
 ## 1. SistemmanajemenCVMPK
@@ -45,7 +44,6 @@ Tujuan dari program ini yaitu:
 Class ini memiliki method `main()` yang menjadi titik awal ketika program dijalankan. Pada class ini terdapat `Scanner` yang digunakan untuk menerima input dari user dan object `Service` yang digunakan untuk menjalankan menu pengelolaan data.
 
 Menu utama pada program terdiri dari:
-
 1. Kelola Data Barang
 2. Kelola Data Pemasok
 3. Kelola Data Pengadaan
@@ -54,142 +52,129 @@ Menu utama pada program terdiri dari:
 Pemilihan menu dilakukan dengan memasukkan angka melalui keyboard.
 
 Class ini juga menggunakan perulangan `while` agar menu utama terus ditampilkan selama user belum memilih menu Keluar.
-
-
-
 ## 2. Service
 
 Class `Service` digunakan untuk menangani proses pengelolaan data pada program.
 
 Class ini menjadi tempat untuk menjalankan proses CRUD dan menu pengelolaan data Barang, Pemasok, dan Pengadaan.
-
-Class `Service` memiliki tiga `ArrayList`, yaitu:
-
-```java
-private ArrayList<Barang> menuBarang;
-private ArrayList<Pemasok> menuPemasok;
-private ArrayList<Pengadaan> menuPengadaan;
-
-Ketiga ArrayList tersebut digunakan untuk menyimpan object dari masing-masing class entitas.
-
 Untuk data Barang terdapat:
-
-menuBarang()
-tambahBarang()
-tampilkanBarang()
-hapusBarang()
-updateStok()
-
+- menuBarang
+- tambahBarang
+- tampilkanBarang
+- hapusBarang
+- updateStok
 Untuk data Pemasok terdapat:
 
-menuPemasok()
-tambahPemasok()
-tampilkanPemasok()
-hapusPemasok()
-updatePemasok()
+- menuPemasok
+- tambahPemasok
+- tampilkanPemasok
+- hapusPemasok
+- updatePemasok
 
 Untuk data Pengadaan terdapat:
 
-menuPengadaan()
-tambahPengadaan()
-tampilkanPengadaan()
-hapusPengadaan()
-updatePengadaan()
+- menuPengadaan
+- tambahPengadaan
+- tampilkanPengadaan
+- hapusPengadaan
+- updatePengadaan
 
 3. Barang
-<img width="443" height="158" alt="image" src="https://github.com/user-attachments/assets/dd2ef58b-9e62-48f7-91a3-ad19838309d8" />
+   
+   <img width="443" height="158" alt="image" src="https://github.com/user-attachments/assets/6e5346a9-ef38-429e-9fde-9ef1df347b13" />
 
 
-
-Keterangan atribut:
-
-* idBarang digunakan sebagai identitas barang.
-* nama digunakan untuk menyimpan nama barang.
-* stok digunakan untuk menyimpan jumlah stok barang.
+  Keterangan atribut:
+- idBarang digunakan sebagai identitas barang.
+- nama digunakan untuk menyimpan nama barang.
+- stok digunakan untuk menyimpan jumlah stok barang.
 
 Class Barang memiliki constructor:
-<img width="721" height="152" alt="image" src="https://github.com/user-attachments/assets/12347e26-45d2-4ff4-8883-b9cf68820116" />
+
+<img width="721" height="152" alt="image" src="https://github.com/user-attachments/assets/7cc5f462-7b3c-4b05-a56e-2827123d58b6" />
 
 Class ini juga memiliki getter dan setter untuk mengakses serta mengubah nilai atribut, lalu validasi diterapkan pada atribut ID barang, nama barang, dan stok barang.
 
 4. Pemasok
-<img width="439" height="159" alt="image" src="https://github.com/user-attachments/assets/763c48e3-9ba3-45b0-bd46-ef8eaa9e1546" />
+
+   <img width="439" height="159" alt="image" src="https://github.com/user-attachments/assets/ca125696-2dd9-4505-81db-7a1fe89ef27e" />
 
 
 Class Pemasok merupakan class entitas yang digunakan untuk menyimpan data pemasok.
 
 Class ini memiliki empat atribut, yaitu:
-* idPemasok digunakan sebagai identitas pemasok.
-* nama digunakan untuk menyimpan nama pemasok.
-* alamat digunakan untuk menyimpan alamat pemasok.
-* noTelepon digunakan untuk menyimpan nomor telepon pemasok.
+- idPemasok digunakan sebagai identitas pemasok.
+- nama digunakan untuk menyimpan nama pemasok.
+- alamat digunakan untuk menyimpan alamat pemasok.
+- noTelepon digunakan untuk menyimpan nomor telepon pemasok.
 
 Class Pemasok memiliki constructor:
-<img width="488" height="92" alt="image" src="https://github.com/user-attachments/assets/6377be90-94c4-44f0-986b-616df03d119a" />
 
+<img width="975" height="166" alt="image" src="https://github.com/user-attachments/assets/94d94e3a-f9e5-4467-9f16-e237a4c54fd8" />
 
 Class ini juga memiliki getter dan setter untuk setiap atribut, lalu validasi diterapkan pada ID pemasok, nama pemasok, alamat, dan nomor telepon.
 
 5. Pengadaan
-<img width="460" height="132" alt="image" src="https://github.com/user-attachments/assets/493369fa-7b1f-48f9-9637-dd09f69763d3" />
 
+   <img width="460" height="132" alt="image" src="https://github.com/user-attachments/assets/6a533707-e985-406f-b640-cd0e4120853a" />
 
 Class Pengadaan merupakan class entitas yang digunakan untuk menyimpan data pengadaan.
 Class ini memiliki tiga atribut, yaitu:
-* idPengadaan digunakan sebagai identitas pengadaan.
-* tanggal digunakan untuk menyimpan tanggal pengadaan.
-* alamat digunakan untuk menyimpan alamat pengadaan.
+-  idPengadaan digunakan sebagai identitas pengadaan.
+-  tanggal digunakan untuk menyimpan tanggal pengadaan.
+- alamat digunakan untuk menyimpan alamat pengadaan.
 
 Class Pengadaan memiliki constructor:
-<img width="859" height="159" alt="image" src="https://github.com/user-attachments/assets/4b25c1e0-296e-4180-93b1-ada2396d04f6" />
 
+<img width="975" height="166" alt="image" src="https://github.com/user-attachments/assets/64854227-915e-45d3-b3ed-e702d059f50c" />
 
 Pada constructor tersebut, setTanggal digunakan agar validasi tanggal dilakukan ketika object Pengadaan dibuat, lalu class ini juga memiliki getter dan setter disetiap atribut.
+
 
 ## Fitur CRUD
 1. Create 
 Create merupakan proses untuk menambahkan data baru ke dalam program, lalu pada data Barang, user diminta memasukkan ID barang, nama barang, dan stok barang, setelah itu data yang dimasukkan kemudian digunakan untuk membuat object Barang.
 
-<img width="318" height="51" alt="image" src="https://github.com/user-attachments/assets/cb85fd55-8ac3-41b6-a809-56620493b3b0" />
 
 Object yang telah dibuat kemudian dimasukkan ke dalam ArrayList<Barang> menggunakan method add(), lalu proses yang sama juga diterapkan pada data Pemasok dan Pengadaan. Data yang dimasukkan user digunakan untuk membuat object kemudian disimpan ke dalam ArrayList masing-masing.
+
 
 2. Read
 Read merupakan proses untuk menampilkan data yang telah tersimpan dan data yang terdapat dalam ArrayList ditampilkan menggunakan perulangan.
 Contohnya pada data Barang:
-<img width="393" height="100" alt="image" src="https://github.com/user-attachments/assets/a455e75c-935b-4c21-95cc-6d469c0f414f" />
+
+
 Perulangan tersebut digunakan untuk mengambil setiap object barang yang terdapat dalam arrayList, lalu aata yang telah diambil kemudian ditampilkan kepada user, serta proses yang sama digunakan untuk menampilkan data Pemasok dan Pengadaan.
 
 3. Update
-<img width="441" height="183" alt="image" src="https://github.com/user-attachments/assets/f26ccee6-8ec3-4ea7-9c60-7d17d556d0cf" />
-
 Update merupakan proses untuk mengubah data yang telah tersimpan dan pada data barang, proses update digunakan untuk memperbarui stok barang berdasarkan ID barang. Selain itu, di beberapa class data lainnya proses update digunakan seperti berikut ini;
-* Pada data Pemasok, proses update digunakan untuk memperbarui data pemasok berdasarkan ID pemasok.
-<img width="455" height="338" alt="image" src="https://github.com/user-attachments/assets/4187aa27-ca80-463c-8c7b-8bf4708e9c51" />
+-	pada data Pemasok, proses update digunakan untuk memperbarui data pemasok berdasarkan ID pemasok.
 
+- Pada data Pengadaan, proses update digunakan untuk memperbarui data pengadaan berdasarkan ID pengadaan.
 
-* Pada data Pengadaan, proses update digunakan untuk memperbarui data pengadaan berdasarkan ID pengadaan.
-<img width="473" height="338" alt="image" src="https://github.com/user-attachments/assets/136c7849-02fe-4bb3-bd76-f20f4a21ba2d" />
+-	user memasukkan ID data yang ingin diperbarui, lalu program akan mencari data berdasarkan ID tersebut dan mengubah nilai data yang dipilih.
 
-
-* User memasukkan ID data yang ingin diperbarui. Program kemudian mencari data berdasarkan ID tersebut dan mengubah nilai data yang dipilih.
 
 4. Delete
 Delete merupakan proses untuk menghapus data yang telah tersimpan, selain itu user memasukkan ID data yang ingin dihapus, lalu program akan mencari data berdasarkan ID tersebut.Jika data ditemukan, data akan dihapus dari ArrayList.
 Proses delete diterapkan pada:
-* Data Barang
-* Data Pemasok
-* Data Pengadaan
+-  Data Barang
+- Data Pemasok
+- Data Pengadaan
 
 ##Alur Program
 1. Menjalankan Program
 Pada saat program dijalankan melalui class SistemmanajemenCVMPK, program membuat object scanner untuk menerima input dari user dan object service untuk menangani proses pengelolaan data.
-<img width="325" height="54" alt="image" src="https://github.com/user-attachments/assets/80059f65-42a3-4072-a7ec-8dcb36b3cee1" />
+
+<img width="668" height="116" alt="image" src="https://github.com/user-attachments/assets/94064e6f-ec30-4b9d-8825-d22b84afa352" />
+
 Setelah itu, program masuk ke perulangan menu utama.
 
 2. Menampilkan Menu Utama
-Program menampilkan menu utama;
-<img width="351" height="137" alt="image" src="https://github.com/user-attachments/assets/0490a088-d500-431e-9428-fee6004902fe" />
+   Program menampilkan menu utama;
+
+   <img width="774" height="266" alt="image" src="https://github.com/user-attachments/assets/cdbd6f08-35de-4f48-9b55-b0bfd6ac6b8a" />
+
 User dapat memilih menu dengan memasukkan angka 1 sampai dengan 4.
 Disini di dalam menu utama terdapat beberapa opsi pilihan, yaitu;
 - Kelola Data Barang
@@ -197,21 +182,26 @@ Disini di dalam menu utama terdapat beberapa opsi pilihan, yaitu;
 - Kelola Data Pengadaan
 - Keluar
 
-
 3. Menu Barang
-Jika user memilih menu 1, program akan menjalankan:
-<img width="236" height="134" alt="image" src="https://github.com/user-attachments/assets/a3c8775e-00c5-43cb-aab8-8fb97d29e347" />
+   
+ Jika user memilih menu 1, program akan menjalankan:
+ 
+<img width="774" height="266" alt="image" src="https://github.com/user-attachments/assets/cab041fb-e6d5-4e21-8d9a-aba23f97002d" />
+
 Pada menu Barang, user dapat memilih proses:
 - Tambah Barang
 - Tampilkan Barang
 - Hapus Barang
 - Update Stok
 - Kembali
-Menu tersebut digunakan untuk mengelola data barang yang tersimpan dalam ArrayList<Barang>.
 
 4. Menu Pemasok
-Jika user memilih menu 2, program akan menjalankan:
-<img width="263" height="130" alt="image" src="https://github.com/user-attachments/assets/b78bccc4-568c-4a12-8634-6121357ace06" />
+   
+  Jika user memilih menu 2, program akan menjalankan:
+
+ <img width="744" height="257" alt="image" src="https://github.com/user-attachments/assets/cc05bf04-aa04-4007-a6dc-fd732c74ec86" />
+
+
 Pada menu Pemasok, user dapat melakukan proses:
 - Tambah Pemasok
 - Tampilkan Pemasok
@@ -219,9 +209,14 @@ Pada menu Pemasok, user dapat melakukan proses:
 - Update Pemasok
 - Kembali
 
+
 5. Menu Pengadaan
-Jika user memilih menu 3, program akan menjalankan:
-<img width="230" height="129" alt="image" src="https://github.com/user-attachments/assets/20f29b97-9d95-4040-ab19-f75323562969" />
+
+   Jika user memilih menu 3, program akan menjalankan:
+
+<img width="759" height="519" alt="image" src="https://github.com/user-attachments/assets/05898c9f-fcd0-4e00-91b6-7f40aea6495d" />
+
+
 Pada menu Pengadaan, user dapat melakukan proses:
 - Tambah Pengadaan
 - Tampilkan Pengadaan
@@ -230,20 +225,10 @@ Pada menu Pengadaan, user dapat melakukan proses:
 - Kembali
 
 6. Menu Keluar
-Jika user memilih menu 4, program akan keluar dari sistem
-<img width="439" height="189" alt="image" src="https://github.com/user-attachments/assets/9608069c-3d3c-4d14-bdf0-97b2d83fc237" />
 
+   Jika user memilih menu 4, program akan keluar dari sistem.
 
+<img width="922" height="457" alt="image" src="https://github.com/user-attachments/assets/954065d7-1874-4fc4-a7d5-a1b0f9554513" />
 
-
-
-
-
-
-
-
-
-
-
-
-
+   
+   
