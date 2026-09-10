@@ -97,7 +97,7 @@ hapusPengadaan()
 updatePengadaan()
 
 3. Barang
-<img width="194" height="79" alt="image" src="https://github.com/user-attachments/assets/23fa6a73-f150-41af-8602-c128604ebc8e" />
+<img width="443" height="158" alt="image" src="https://github.com/user-attachments/assets/fb0bb4a9-10a6-4597-991a-e936780da070" />
 
 Keterangan atribut:
 
@@ -106,12 +106,13 @@ Keterangan atribut:
 * stok digunakan untuk menyimpan jumlah stok barang.
 
 Class Barang memiliki constructor:
-<img width="334" height="73" alt="image" src="https://github.com/user-attachments/assets/355715eb-d390-4232-9a5c-6829e9fba138" />
+<img width="721" height="152" alt="image" src="https://github.com/user-attachments/assets/12347e26-45d2-4ff4-8883-b9cf68820116" />
 
 Class ini juga memiliki getter dan setter untuk mengakses serta mengubah nilai atribut, lalu validasi diterapkan pada atribut ID barang, nama barang, dan stok barang.
 
 4. Pemasok
-<img width="214" height="79" alt="image" src="https://github.com/user-attachments/assets/84d3a5b1-a938-4884-844a-45cd18cbc1be" />
+<img width="439" height="159" alt="image" src="https://github.com/user-attachments/assets/763c48e3-9ba3-45b0-bd46-ef8eaa9e1546" />
+
 
 Class Pemasok merupakan class entitas yang digunakan untuk menyimpan data pemasok.
 
@@ -122,12 +123,14 @@ Class ini memiliki empat atribut, yaitu:
 * noTelepon digunakan untuk menyimpan nomor telepon pemasok.
 
 Class Pemasok memiliki constructor:
-<img width="482" height="88" alt="image" src="https://github.com/user-attachments/assets/6655de87-4590-4b16-8d75-d901e1d31b1c" />
+<img width="488" height="92" alt="image" src="https://github.com/user-attachments/assets/6377be90-94c4-44f0-986b-616df03d119a" />
+
 
 Class ini juga memiliki getter dan setter untuk setiap atribut, lalu validasi diterapkan pada ID pemasok, nama pemasok, alamat, dan nomor telepon.
 
 5. Pengadaan
-<img width="197" height="65" alt="image" src="https://github.com/user-attachments/assets/6252db00-523f-4d9c-95ea-ea21013d7dfb" />
+<img width="460" height="132" alt="image" src="https://github.com/user-attachments/assets/493369fa-7b1f-48f9-9637-dd09f69763d3" />
+
 
 Class Pengadaan merupakan class entitas yang digunakan untuk menyimpan data pengadaan.
 Class ini memiliki tiga atribut, yaitu:
@@ -136,7 +139,8 @@ Class ini memiliki tiga atribut, yaitu:
 * alamat digunakan untuk menyimpan alamat pengadaan.
 
 Class Pengadaan memiliki constructor:
-<img width="416" height="78" alt="image" src="https://github.com/user-attachments/assets/31df7560-8f47-4950-bf59-f80b34352819" />
+<img width="859" height="159" alt="image" src="https://github.com/user-attachments/assets/4b25c1e0-296e-4180-93b1-ada2396d04f6" />
+
 
 Pada constructor tersebut, setTanggal digunakan agar validasi tanggal dilakukan ketika object Pengadaan dibuat, lalu class ini juga memiliki getter dan setter disetiap atribut.
 
